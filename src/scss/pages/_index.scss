@@ -205,6 +205,7 @@
         padding: 3rem 5rem;
         border-radius: 0.7rem;
         background: #f6f0e4;
+        display: block;
     }
 }
 
@@ -563,7 +564,7 @@
     right: 0;
     width: 33rem;
     top: 13.5rem;
-    background: rgba(217, 217, 217, 0.3);
+    background: rgba(217, 217, 217, 1);
     transform: translateY(-170%);
     transition: all 0.3s;
     &.visible{
@@ -573,7 +574,7 @@
         font: 700 1.8rem $font-family;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #fff;
+        color: #000;
         padding: 2rem 2.1rem;
         align-items: center;
         justify-content: space-between;
@@ -617,4 +618,55 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+.blog-modal{
+    z-index: 77777777;
+    .modal-content{
+        position: relative;
+        padding: 8rem;
+        border-radius: 0.7rem;
+        background: #F6F0E4;
+        display: flex;
+        gap: 9rem;
+        max-width: 164.9rem;
+        img{
+            width: 40rem;
+            height: 70.8rem;
+        }
+        p{
+            font: 400 1.8rem / 1.4 $font-family;
+        }
+    }
+    &__title{
+        font: 700 3.2rem / 1.4 $font-family;
+        color: #000;
+        margin-bottom: 2rem;
+        margin-top: -1.9rem;
+    }
+    .close-btn{
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        img{
+            width: 3.6rem;
+            height: 3.6rem;
+        }
+    }
+}
+
+.filters{
+    min-height: 100vh;
+    background: url('../images/filters.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        width: 130rem;
+        height: 76.2rem;
+        background: rgba(60, 75, 70, 0.8);
+        margin-top: 13rem;
+        border: 0.1rem solid #fff;
+    }
 }

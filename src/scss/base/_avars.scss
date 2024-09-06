@@ -4,3 +4,11 @@ $third-family: "FontAwesome", sans-serif;
 $font3: "Courier New", sans-serif;
 $font4: "DaMiOne", sans-serif;
 $font5: "Montserrat", sans-serif;
+
+
+@font-face {
+    font-family: 'DaMiOne';
+    src: url('../fonts/DaMiOne-Regular.ttf') format('truetype'); /* Путь к файлу шрифта и его формат */
+    font-weight: normal;
+    font-style: normal;
+  }
