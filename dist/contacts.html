@@ -87,7 +87,7 @@
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A40986ee1e0c0e4a8bf97a684ff5d43fee7cb2cfe90522b574acda5aefc99db7e&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
                    </div>
                 </div>
-                <button class="contacts__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                <button class="contacts__btn open-btn">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
         </div>
     </main>
@@ -135,6 +135,29 @@
            </div>
         </div>
     </footer>
+
+    <div id="modal" class="modal contact-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content__logo">
+                <img src="./images/logo-vec.svg" alt="">
+                <form class="modal-content__form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input class="tel" type="text" placeholder="Ваш телефон">
+                    <button class="modal-content__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <div class="descr">
+                        <input class="styled-checkbox" id="checkbox1" type="checkbox" value="value1" checked>
+                        <label for="checkbox1">Я согласен с условиями обработки персональных данных</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-content__success">
+                <img src="./images/icon-check.png" alt="">
+                <div class="modal-content__success-title">Спасибо за заявку!</div>
+                <p class="modal-content__success-text">Наши специалисты свяжутся с Вами в ближайшее время.</p>
+            </div>
+        </div>
+    </div>
 </div>
     
 </body>

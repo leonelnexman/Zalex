@@ -128,16 +128,135 @@
            </div>
         </div>
     </footer>
-    <div id="modal" class="modal">
+
+    <div id="modal" class="modal contact-modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Модальное окно</h2>
-            <p>Это пример модального окна.</p>
+            <div class="modal-content__logo">
+                <img src="./images/logo-vec.svg" alt="">
+                <form class="modal-content__form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input class="tel" type="text" placeholder="Ваш телефон">
+                    <button class="modal-content__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <div class="descr">
+                        <input class="styled-checkbox" id="checkbox1" type="checkbox" value="value1" checked>
+                        <label for="checkbox1">Я согласен с условиями обработки персональных данных</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-content__success">
+                <img src="./images/icon-check.png" alt="">
+                <div class="modal-content__success-title">Спасибо за заявку!</div>
+                <p class="modal-content__success-text">Наши специалисты свяжутся с Вами в ближайшее время.</p>
+            </div>
         </div>
     </div>
+
+    <div id="blogModal" class="modal blog-modal">
+        <div class="modal-content">
+            <button class="close-btn">
+                <img src="./images/close.png" alt="">
+            </button>
+            <img src="./images/blog.png" alt="">
+            <div class="blog-modal__content">
+                <div class="blog-modal__title">Миллионеры предпочитают <br> недвижимость в Дубае.</div>
+                <p class="blog-modal__text">
+                    Богатейшие люди планеты продолжают инвестировать в элитную недвижимость ОАЭ. Согласно статистическим данным, Дубай по количеству сделок с объектами стоимостью свыше $10 млн, по итогам 2023 г., более чем в два раза обогнал Лондон и Нью-Йорк, где соответственно было заключено 240 и 211 сделок, тогда как в Дубае – 431.
+                    <br><br>
+                    На фоне высокого спроса на рынке недвижимости Дубая сократилось предложение домов стоимостью от $10 млн. Всего экспонировалось 864 лота, что на 59% меньше, чем годом ранее © Knight Frank.
+                    <br><br>
+                    Сокращение предложения стало катализатором спроса: только за I квартал 2024 г. было куплено домов стоимостью свыше $10 млн на 19% больше, чем в аналогичный период прошлого года. Наиболее популярные у миллионеров районы: Palm Jumeirah – 39 домов стоимостью более $10 млн, Palm Jebel Ali – 10 домов и Business Bay – 7 домов.
+                    <br><br>
+                    Также динамично растут продажи домов стоимостью от $25 млн. В 2023 г. богатейшие люди планеты купили 56 ультра-роскошных домов, что в два раза больше чем годом ранее – 28 домов.  За I квартал 2024 г. обрели новых собственников 12 домов.
+                    <br><br>
+                    В 2023 г. на рынке элитной недвижимости Дубая был установлен ценовой рекорд за всю его историю.  Покупатель за $136,2 млн приобрел пентхаус общей площадью более 2 тыс. кв. м с собственным панорамным бассейном и лифтом в строящейся 71-этажной башне Como Residences (Palm Jumeirah). Для сравнения, в 2016 г. самой дорогой сделкой ($4,2 млн) считалась продажа апартаментов Armani Residences в знаковой Burj Khalifa.
+                    <br><br>
+                    По данным аналитиков, за прошедший год рынок элитной недвижимости Дубая вырос более чем на 26% - это один из самых высоких показателей в мире. Тренд на динамичный рост сохраняется и в 2024 г.
+                    <br><br>
+                    <span>11.06.2024</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="catalogModal" class="modal catalogModal">
+        <div class="modal-content">
+            <button class="close-catalog-btn"><img src="./images/close.png" alt=""></button>
+            <div class="catalogModal__title">Binghatti Hills</div>
+            <div class="catalogModal__adress">Al Barsha, Dubai Science Park, Al Barsha South Second</div>
+            <div class="catalogModal__inner">
+                <div class="catalogModal__btn-offer">ОСТАВИТЬ ЗАЯВКУ</div>
+                <div class="catalogModal__img">
+                    <div class="parent">
+                        <div href="./images/item1.png" data-fancybox="gallery" class="div1"><img src="./images/item1.png" alt=""></div>
+                        <div href="./images/item2.png" data-fancybox="gallery" class="div2"><img src="./images/item2.png" alt=""></div>
+                        <div href="./images/item3.png" data-fancybox="gallery" class="div3"><img src="./images/item3.png" alt=""> <div class="overlay"><a href="#">еще фото</a></div> </div>
+                    </div>
+                    <div class="catalogModal__information">
+                        <div class="catalogModal__price">от 1 001 175 AED</div>
+                        <div class="catalogModal__chars">
+                            <div class="catalogModal__char">
+                                Комнат
+                                <span>2</span>
+                            </div>
+                            <div class="catalogModal__char">
+                                Этаж
+                                <span>42</span>
+                            </div>
+                            <div class="catalogModal__char">
+                                Площадь
+                                <span>42.64 - 47.29 м²</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="min">мин. 15 247 AED/м2</div>
+                    <div class="catalogModal__addr">Al Barsha, Dubai Science Park, Al Barsha South Second</div>
+                </div>
+                <div class="catalogModal__descriptions">
+                    <div class="catalogModal__descr">
+                        <div class="catalogModal__descr-title">Описание</div>
+                        <p>Binghatti Hills — это новый жилой комплекс от компании Binghatti Developers, расположенный в динамично развивающемся районе Dubai Science Park. Этот проект предлагает ряд роскошных резиденций, включая студии и апартаменты с одной или двумя спальнями.
+                            Апартаменты на продажу в Binghatti Hills спроектированы с акцентом на современную архитектуру и интерьеры и располагают такими удобствами, как частный бассейн с джакузи, мини-амфитеатр, зона отдыха, Дзен-сад, бассейн-инфинити, детский бассейн, прогулочная площадка, тренажерный зал, спа-салон, спортивные сооружения, площадка для йоги на открытом воздухе, бар у бассейна и дорожка для бега. Эти объекты обеспечивают сбалансированный образ жизни, способствуя как отдыху, так и активной жизни.</p>
+                    </div>
+                    <div class="catalogModal__characteristics">
+                        <div class="catalogModal__characteristics-title">Характеристики</div>
+                        <div class="catalogModal__characteristics-item">
+                            Жилая площадь <span>30 м²</span>
+                        </div>
+                        <div class="catalogModal__characteristics-item">
+                            Тип/материал стен здания <span>Газоблочные</span>
+                        </div>
+                        <div class="catalogModal__characteristics-item">
+                            Расположение <span>Не угловая</span>
+                        </div>
+                        <div class="catalogModal__characteristics-item">
+                            Кухня <span>10 м²</span>
+                        </div>
+                        <div class="catalogModal__characteristics-item">
+                            Год постройки здания <span>2021</span>
+                        </div>
+                        <div class="catalogModal__characteristics-item" style="display: none;">
+                            Год постройки здания <span>2021</span>
+                        </div>
+                        <div class="catalogModal__characteristics-item" style="display: none;">
+                            Год постройки здания <span>2021</span>
+                        </div>
+                        <button class="catalogModal__characteristics-btn">
+                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.40625L5 5.40625L9 1.40625" stroke="#3C4B46" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Показать полные характеристики
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
     
 </body>
 <script src="./js/swiper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="./js/app.js"></script>
 </html>
